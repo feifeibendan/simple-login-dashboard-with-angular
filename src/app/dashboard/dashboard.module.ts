@@ -9,9 +9,10 @@ import { StoresComponent } from './pages/stores/stores.component';
 import { InventoriesComponent } from './pages/inventories/inventories.component';
 import { ReportsComponent } from './pages/reports/reports.component';
 import { DashboardComponent } from './dashboard.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [OverviewComponent, UsersComponent, CustomersComponent, StoresComponent, InventoriesComponent, ReportsComponent, DashboardComponent],
+  declarations: [OverviewComponent, UsersComponent, CustomersComponent, StoresComponent, InventoriesComponent, ReportsComponent, DashboardComponent, SidebarComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule
