@@ -3,6 +3,8 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
 ## Development
+Run `npm i <dependency name>@<version number>` to install any dependencies with any version
+
 Run `ng new <name of app> --style=scss` to generate basic of application
 
 Other option:
