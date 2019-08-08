@@ -1,0 +1,57 @@
+.sidenav {
+    height: 100%;
+    background-color: #4a488e;
+    overflow-x: hidden;
+    padding-top: 20px;
+    .content {
+        margin-top: 20%;
+        padding: 60px;
+        color: #fff;
+        h2{
+            font-weight: 300;
+        }
+    }
+}
+
+.main {
+    padding: 0px 10px;
+    .reset-form {
+        margin-top: 10%;
+        h2, h3 {
+            color:#4a488e;
+        }
+    }
+}
+
+.btn-purple{
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .sidenav {
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .main {
+        margin-left: 40%; 
+        .reset-form {
+            padding: 20% 20% 0% 20%;
+        }
+    }
+}
+
+@media screen and (min-width : 375px) and (max-width : 812px) and (orientation : portrait) { 
+    .sidenav {
+        display:none;
+    }
+    .main {
+        margin-left: 0%;
+        padding: 10%;
+        .reset-form {
+            margin-top: 30%;
+        }    
+    }
+}

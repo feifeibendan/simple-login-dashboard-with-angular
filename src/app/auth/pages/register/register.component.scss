@@ -1,0 +1,59 @@
+.sidenav {
+    height: 100%;
+    background-color: #4a488e;
+    overflow-x: hidden;
+    padding-top: 20px;
+    .content {
+        margin-top: 20%;
+        padding: 60px;
+        color: #fff;
+        h2{
+            font-weight: 300;
+        }
+    }
+}
+
+.main {
+    padding: 0px 10px;
+    .register-form {
+        margin-top: 10%;
+        h2 {
+            color:#4a488e;
+        }
+    }
+}
+
+.btn-purple{
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .sidenav {
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .main {
+        margin-left: 40%; 
+        .register-form {
+            margin-top: 60%;
+            h2 {
+                display:none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width : 375px) and (max-width : 812px) and (orientation : portrait) { 
+    .sidenav {
+        display:none;
+    }
+    .main {
+        margin-left: 0%;
+        .register-form {
+            margin-top: 20%;
+        }    
+    }
+}
