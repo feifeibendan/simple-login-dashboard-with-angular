@@ -6,11 +6,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { ResetComponent } from './pages/reset/reset.component';
 import { RegisterComponent } from './pages/register/register.component';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [LoginComponent, ResetComponent, RegisterComponent],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    SharedModule
   ]
 })
 export class AuthModule { }

@@ -2,8 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AlertComponent } from './components/alert/alert.component';
+import { AlertState, AlertService, AlertTemplateDirective } from './services/alert.service';
+
 @NgModule({
-  declarations: [],
+  declarations: [
+    AlertComponent,
+    AlertTemplateDirective
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -12,7 +18,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   exports: [
   	CommonModule,
   	FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AlertComponent,
+    AlertTemplateDirective
+  ],
+  providers: [
+    AlertService,
+    AlertState
   ]
 })
 export class SharedModule { }
